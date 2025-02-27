@@ -29,7 +29,7 @@
     "build": "set HTTPS=false && PUBLIC_URL=/wp-content/reactpress/apps/react-geom/build react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "if [ \"$CI\" = \"true\" ]; then echo 'Entorno CI, saltando husky install'; else husky install; fi"
+    "prepare": "if [ \"$NODE_ENV\" = \"production\" ]; then echo 'Producción: omitiendo husky install'; else husky install; fi"
   },
   "eslintConfig": {
     "extends": [
