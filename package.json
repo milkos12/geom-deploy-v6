@@ -10,7 +10,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "if [ -d .git ]; then npx husky install; else echo 'Husky no instalado, omitiendo prepare'; fi"
+    "prepare": "if [ \"$NODE_ENV\" != \"production\" ] && [ -d .git ]; then npx husky install; else echo 'Husky no instalado, omitiendo prepare'; fi"
   },
   "author": "",
   "license": "ISC",
