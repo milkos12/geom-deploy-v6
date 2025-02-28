@@ -10,7 +10,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "npx husky install || echo 'Husky no instalado, omitiendo prepare'"
+    "prepare": "npx husky install || echo 'Husky no instalado, omitiendo prepare'",
+    "build": "CI=false HTTPS=false PUBLIC_URL=/wp-content/reactpress/apps/react-geom/build react-scripts build"
   },
   "author": "",
   "license": "ISC",
