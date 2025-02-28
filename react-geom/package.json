@@ -26,7 +26,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "set HTTPS=false && PUBLIC_URL=/wp-content/reactpress/apps/react-geom/build react-scripts build",
+    "build": "HTTPS=false PUBLIC_URL=/wp-content/reactpress/apps/react-geom/build react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "if [ -d .git ]; then husky install; else echo 'Husky no instalado, omitiendo prepare'; fi"
